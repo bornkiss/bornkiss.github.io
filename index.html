@@ -7,6 +7,10 @@
   <title>Bornkiss</title>
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700,900" rel="stylesheet">
   <style>
+    :root {
+      --dark-color: #fff;
+      --dark-bg: #373737;
+    }
     * {
       box-sizing: border-box;
       padding: 0;
@@ -50,6 +54,13 @@
         width: 0;
       }
     } */
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: var(--dark-color, #121314);
+        background-color: var(--dark-bg, #fff);
+      }
+    }
 
   </style>
 </head>
